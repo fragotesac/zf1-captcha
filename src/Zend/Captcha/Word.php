@@ -68,7 +68,7 @@ abstract class Zend_Captcha_Word extends Zend_Captcha_Base
      *
      * @var string
      */
-    protected $_sessionClass = 'Zend_Session_Namespace';
+    protected $_sessionClass = Zend_Session_Namespace::class;
 
     /**
      * Should the numbers be used or only letters
@@ -137,7 +137,7 @@ abstract class Zend_Captcha_Word extends Zend_Captcha_Base
      * Set session class for persistence
      *
      * @param  string $_sessionClass
-     * @return Zend_Captcha_Word
+     * @return $this
      */
     public function setSessionClass($_sessionClass)
     {
@@ -159,7 +159,7 @@ abstract class Zend_Captcha_Word extends Zend_Captcha_Base
      * Set word length of captcha
      *
      * @param integer $wordlen
-     * @return Zend_Captcha_Word
+     * @return $this
      */
     public function setWordlen($wordlen)
     {
@@ -184,7 +184,7 @@ abstract class Zend_Captcha_Word extends Zend_Captcha_Base
      * Set captcha identifier
      *
      * @param string $id
-     * @return Zend_Captcha_Word
+     * @return $this
      */
     protected function _setId($id)
     {
@@ -196,7 +196,7 @@ abstract class Zend_Captcha_Word extends Zend_Captcha_Base
      * Set timeout for session token
      *
      * @param  int $ttl
-     * @return Zend_Captcha_Word
+     * @return $this
      */
     public function setTimeout($ttl)
     {
@@ -218,7 +218,7 @@ abstract class Zend_Captcha_Word extends Zend_Captcha_Base
      * Sets if session should be preserved on generate()
      *
      * @param bool $keepSession Should session be kept on generate()?
-     * @return Zend_Captcha_Word
+     * @return $this
      */
     public function setKeepSession($keepSession)
     {
@@ -240,7 +240,7 @@ abstract class Zend_Captcha_Word extends Zend_Captcha_Base
      * Set if numbers should be included in the pattern
      *
      * @param bool $_useNumbers numbers should be included in the pattern?
-     * @return Zend_Captcha_Word
+     * @return $this
      */
     public function setUseNumbers($_useNumbers)
     {
@@ -271,7 +271,7 @@ abstract class Zend_Captcha_Word extends Zend_Captcha_Base
      * Set session namespace object
      *
      * @param  Zend_Session_Namespace $session
-     * @return Zend_Captcha_Word
+     * @return $this
      */
     public function setSession(Zend_Session_Namespace $session)
     {
@@ -300,7 +300,7 @@ abstract class Zend_Captcha_Word extends Zend_Captcha_Base
      * Set captcha word
      *
      * @param  string $word
-     * @return Zend_Captcha_Word
+     * @return $this
      */
     protected function _setWord($word)
     {

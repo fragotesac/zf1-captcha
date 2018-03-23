@@ -43,7 +43,7 @@ class Zend_Captcha_Figlet extends Zend_Captcha_Word
     /**
      * Constructor
      *
-     * @param null|string|array|Zend_Config $options
+     * @param array|Zend_Config $options
      */
     public function __construct($options = null)
     {

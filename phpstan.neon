@@ -1,2 +1,5 @@
 parameters:
     ignoreErrors:
+        - '#Casting to int something that.s already int\.#'
+        - '#Access to an undefined property Zend_Session_Namespace::\$word\.#'
+        - '#Call to an undefined method Zend_View_Abstract::doctype\(\)\.#'

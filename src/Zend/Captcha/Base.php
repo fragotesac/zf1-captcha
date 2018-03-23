@@ -127,7 +127,7 @@ abstract class Zend_Captcha_Base extends Zend_Validate_Abstract implements Zend_
      * @param  array $options
      * @return $this
      */
-    public function setOptions($options = null)
+    public function setOptions($options = array())
     {
         foreach ($options as $key => $value) {
             $this->setOption($key, $value);
