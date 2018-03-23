@@ -47,5 +47,8 @@
         "test": "phpunit ./tests",
         "test-with-coverage": "phpunit --coverage-clover=clover.xml ./tests",
         "phpstan": "phpstan analyze -l7 -c phpstan.neon --no-progress ./src --ansi"
+    },
+    "suggests": {
+        "ext-gd": "Used in the Image Captcha"
     }
 }
