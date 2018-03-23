@@ -242,7 +242,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set start image
      *
      * @param string $startImage
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setStartImage ($startImage)
     {
@@ -254,7 +254,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set dot noise level
      *
      * @param int $dotNoiseLevel
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setDotNoiseLevel ($dotNoiseLevel)
     {
@@ -266,7 +266,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set line noise level
      *
      * @param int $lineNoiseLevel
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setLineNoiseLevel ($lineNoiseLevel)
     {
@@ -278,7 +278,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set captcha expiration
      *
      * @param int $expiration
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setExpiration($expiration)
     {
@@ -290,7 +290,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set garbage collection frequency
      *
      * @param int $gcFreq
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setGcFreq($gcFreq)
     {
@@ -302,7 +302,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set captcha font
      *
      * @param  string $font
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setFont($font)
     {
@@ -314,7 +314,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set captcha font size
      *
      * @param  int $fsize
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setFontSize($fsize)
     {
@@ -326,7 +326,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set captcha image height
      *
      * @param  int $height
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setHeight($height)
     {
@@ -338,7 +338,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set captcha image storage directory
      *
      * @param  string $imgDir
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setImgDir($imgDir)
     {
@@ -350,7 +350,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set captcha image base URL
      *
      * @param  string $imgUrl
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setImgUrl($imgUrl)
     {
@@ -362,7 +362,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set image alternative text
      *
      * @param string $imgAlt
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setImgAlt ($imgAlt)
     {
@@ -374,7 +374,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set captch image filename suffix
      *
      * @param  string $suffix
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setSuffix($suffix)
     {
@@ -386,7 +386,7 @@ class Zend_Captcha_Image extends Zend_Captcha_Word
      * Set captcha image width
      *
      * @param  int $width
-     * @return Zend_Captcha_Image
+     * @return $this
      */
     public function setWidth($width)
     {

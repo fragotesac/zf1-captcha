@@ -20,8 +20,6 @@
  * @version    $Id$
  */
 
-require_once 'Zend/Form/Element/Captcha.php';
-require_once 'Zend/Captcha/Adapter.php';
 
 /**
  * @category   Zend
@@ -74,7 +72,6 @@ class Zend_Captcha_FigletTest extends PHPUnit\Framework\TestCase
 
     public function getView()
     {
-        require_once 'Zend/View.php';
         $view = new Zend_View();
         $view->addHelperPath(dirname(__FILE__) . '/../../../../library/Zend/View/Helper');
         return $view;
@@ -100,7 +97,6 @@ class Zend_Captcha_FigletTest extends PHPUnit\Framework\TestCase
      */
     public function testLabelIdIsCorrect()
     {
-        require_once 'Zend/Form.php';
         $form = new Zend_Form();
         $form->setElementsBelongTo('comment');
         $this->element->setLabel("My Captcha");
@@ -234,6 +230,9 @@ class Zend_Captcha_FigletTest extends PHPUnit\Framework\TestCase
         $this->assertEquals($options, $test);
     }
 
+    /**
+     * @doesNotPerformAssertions
+     */
     public function testShouldAllowFigletsLargerThanFourteenCharacters()
     {
         $this->captcha->setName('foo')
@@ -287,7 +286,6 @@ class Zend_Captcha_FigletTest extends PHPUnit\Framework\TestCase
         if(headers_sent($file, $line)) {
             $this->markTestSkipped("Cannot use sessions because headers already sent");
         }
-        require_once 'Zend/Session/Namespace.php';
         $session = new Zend_Session_Namespace('captcha');
         $this->captcha->setSession($session);
         $this->testCaptchaIsRendered();
