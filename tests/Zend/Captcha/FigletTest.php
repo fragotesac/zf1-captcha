@@ -22,7 +22,6 @@
 
 require_once 'Zend/Form/Element/Captcha.php';
 require_once 'Zend/Captcha/Adapter.php';
-require_once 'Zend/Config.php';
 
 /**
  * @category   Zend
