@@ -17,11 +17,11 @@
         "diablomedia/zendframework1-loader": "^1.0.0",
         "diablomedia/zendframework1-crypt": "^1.0.0",
         "diablomedia/zendframework1-text": "^1.0.0",
-        "diablomedia/zendframework1-form": "dev-master",
-        "diablomedia/zendframework1-service-recaptcha": "dev-master",
-        "diablomedia/zendframework1-session": "dev-master",
-        "diablomedia/zendframework1-validate": "dev-master",
-        "diablomedia/zendframework1-view": "dev-master"
+        "diablomedia/zendframework1-form": "*",
+        "diablomedia/zendframework1-service-recaptcha": "*",
+        "diablomedia/zendframework1-session": "*",
+        "diablomedia/zendframework1-validate": "*",
+        "diablomedia/zendframework1-view": "*"
     },
     "autoload": {
         "psr-0": {
