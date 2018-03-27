@@ -3,3 +3,7 @@ parameters:
         - '#Casting to int something that.s already int\.#'
         - '#Access to an undefined property Zend_Session_Namespace::\$word\.#'
         - '#Call to an undefined method Zend_View_Abstract::doctype\(\)\.#'
+        - '#Call to an undefined method Zend_View_Interface::.+\(\)\.#'
+        - '#Call to an undefined method Zend_Form\|Zend_Form_DisplayGroup\|Zend_Form_Element::get.+\(\)\.#'
+        - '#Parameter \#1 \$name of method Zend_Form_Element::_getDecorator\(\) expects string, array<string, Zend_Captcha_Adapter>\|string given\.#'
+        - '#Parameter \#2 \$options of method Zend_Form_Element::_getDecorator\(\) expects array\|null, array<string, Zend_Captcha_Adapter>\|string given\.#'
